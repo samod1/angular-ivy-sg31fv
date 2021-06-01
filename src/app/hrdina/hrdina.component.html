@@ -1,0 +1,12 @@
+
+<h1>Prehlad hrdninov</h1>
+<ul class="hrdinovia">
+  <li *ngFor="let hrdina of hrdina">
+  <span class="badge">{{hrdina.id}}</span> {{hrdinovia.meno}}
+  </li>
+</ul>
+
+
+<h1>{{hrdina.meno| uppercase}}</h1>
+<label for="meno">Meno</label>
+  <input id="meno" [(ngModel)]= "hrdina.meno" placeholder="name">
